@@ -1,0 +1,59 @@
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background: linear-gradient(#fff, #f3f3f3, #f1f1f1);
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* VALET */
+.valet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.valet .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    max-width: 700px;
+}
+.valet .container header img {
+    width: 4em;
+    margin: 0 0 .7em;
+}
+.valet .container header .text {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+.valet .container header .text .title {
+    font-size: 2em;
+    line-height: 1em;
+}
+.valet .container header .text .subtitle {
+    color: #555;
+}
+.valet .container .list {
+    display: flex;
+    gap: 2%;
+    row-gap: 2em;
+}
+.valet .container .list .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 5/4;
+    text-decoration: none;
+    width: 32%;
+    padding: .2em;
+    background: linear-gradient(#fefefe, #EFEFEF);
+    border: 1px solid #AAA;
+    border-radius: .3em;
+}
+.valet .container .list .item .title {
+    color: #222;
+}
