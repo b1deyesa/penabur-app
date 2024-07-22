@@ -9,7 +9,7 @@
         </header>
         <div class="list">
             <a href="" class="item">
-                <span class="title">Sertitikat</span>
+                <span class="title">Sertifikat</span>
             </a>
             <a href="" class="item">
                 <span class="title">Agenda</span>
