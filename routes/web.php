@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'index')->name('index');
+Route::view('/sertifikat', 'app.sertifikat.index')->name('sertifikat.index');

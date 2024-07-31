@@ -1,10 +1,13 @@
 :root {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
 }
 body {
     background: linear-gradient(#fff, #f3f3f3, #f1f1f1);
+    padding: 2em .8em;
 }
 * {
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     box-sizing: border-box;
 }
@@ -46,14 +49,124 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    aspect-ratio: 5/4;
     text-decoration: none;
-    width: 32%;
-    padding: .2em;
+    width: 100%;
+    padding: 1em;
     background: linear-gradient(#fefefe, #EFEFEF);
     border: 1px solid #AAA;
     border-radius: .3em;
 }
 .valet .container .list .item .title {
     color: #222;
+}
+
+/* Sertifikat */
+.sertifikat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sertifikat .container {
+    width: 100%;
+    max-width: 40em;
+    height: fit-content;
+}
+.sertifikat .container form {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    height: fit-content;
+    min-height: 60vh;
+}
+.sertifikat .container form .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+}
+.sertifikat .container form .content h1 {
+    font-size: 2em;
+    margin: 0 0 .7em;
+}
+.sertifikat .container form .content label {
+    display: flex;
+    flex-direction: column;
+    font-size: .9em;
+    font-weight: bold;
+    gap: .3em;
+    width: 100%;
+}
+.sertifikat .container form .content input {
+    width: 100%;
+    padding: .4em .6em;
+    border: 1px solid #AAA;
+    border-radius: .2em;
+}
+.sertifikat .container form .content .row {
+    display: flex;
+    flex-direction: row;
+    gap: 1.3em;
+    width: 100%;    
+    padding: 1.3em 0;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+}
+.sertifikat .container form .content .row label:first-child {
+    padding: 0 1.3em 0 0;
+    border-right: 1px solid #DEDEDE;
+}
+.sertifikat .container form .content .date {
+    display: flex;
+    gap: .5em;
+}
+.sertifikat .container form .content .date select {
+    appearance: none;
+    padding: .4em .6em;
+    border: 1px solid #AAA;
+    border-radius: .2em;
+}
+.sertifikat .container form .content .date select:nth-child(2) {
+    width: 100%;
+}
+.sertifikat .container form .content .foto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+    width: fit-content;
+}
+.sertifikat .container form .content .foto img {
+    display: flex;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    min-width: 9em;
+    max-width: 9em;
+    border: 1px solid #AAA;
+    border-radius: .2em;
+    overflow: hidden;
+}
+.sertifikat .container form .content .foto label {
+    position: absolute;
+    display: flex;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: fit-content;
+    width: fit-content;
+    padding: .3em .6em;
+    z-index: 1;
+    background: linear-gradient(#fefefe, #EFEFEF);
+    border: 1px solid #AAA;
+    border-radius: .2em;
+}
+.sertifikat .container form .button {
+    display: flex;
+    justify-content: space-between;
+    gap: .5em;
+    margin-top: auto;
+}
+.sertifikat .container form .button .end {
+    display: flex;
+    gap: .5em;
 }
